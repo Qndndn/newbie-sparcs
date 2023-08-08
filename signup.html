@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.png">
+<head>
+<body>
+    <div style="margin-right: 0px;">  
+        <img class="icon" onclick="location.href='./main.html';" src="./icon.png" alt="washing machine icon" style="width:180px; vertical-align:middle; height:60px; "/>
+        <span style="font-weight: bold; font-size:x-large; margin-left: 320px;">회원가입</span>
+        <br><br>
+        <label>이름: </label>
+        <input required type="text" id="name" name="name" style="background-color:rgba(221, 218, 213, 0.597)">
+        <br>
+        <label>방호수: </label>
+        <input required type="number" id="roomnum" name="roomnum" style="background-color:rgba(221, 218, 213, 0.597)">
+        <br>
+        <label>아이디: </label>
+        <input required type="text" id="id" name="id" style="background-color:rgba(221, 218, 213, 0.597)">
+        <input type="submit" name="check-duplicate" value="중복확인" style="background-color:rgba(148, 143, 143, 0.678)">
+        <br>
+        <label>비밀번호: </label>
+        <input required type="password" id="password" name="password" style="background-color:rgba(221, 218, 213, 0.597)">
+        <br>
+        <label>비밀번호 재입력: </label>
+        <input required type="password" id="r-password" name="r-password" style="background-color:rgba(221, 218, 213, 0.597)">
+        <br>
+        <input type="submit" name="signup" onclick="create_id();" value="가입하기" style="background-color:rgba(221, 218, 213, 0.597)">                 
+    </div>
+</body>

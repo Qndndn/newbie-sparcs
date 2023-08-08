@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 2px 3px;
+    border: none;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login{
+    margin: 8px 3px;
+    color: #D2D2D2;
+}
+
+
+select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+  
+  select:disabled {
+    opacity: 0.5;
+  }
+  
+  p.time{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }

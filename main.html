@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.png">
+    <script src="./common.js"></script>
+    <link href="./main.css" rel="stylesheet" />
+<head>
+<body>
+    <div style="float: left; margin-right: 20px;">  
+        <img class="icon" onclick="location.href='./main.html';" src="./icon.png" alt="washing machine icon" style="width:180px; height:60px;"/>
+        <div class="location">
+            <form action="">
+                <select name="floor" id="floor" required>
+                    <option value=f1>1층</option>
+                    <option value=f2>2층</option>
+                    <option value=f3>3층</option>
+                    <option value=f4>4층</option>
+                </select>
+            
+                <select name="direction" id="direction" required>
+                    <option value=d1>방향1</option>
+                    <option value=d2>방향2</option>
+                    <option value=d3>방향3</option>
+                        <option value=d4>방향4</option>
+                    </select>
+
+                    <select name="number" id="number" required>
+                        <option value=a>a</option>
+                        <option value=b>b</option>
+                </select>
+
+                <input type="submit" name="map-button" value="🗺️" style="background-color:rgb(255, 255, 255)">
+                <input type="submit" name="search-button" value="확인하기" style="background-color:rgba(148, 143, 143, 0.678)">
+                    
+            </form>
+        </div>
+
+        <p class="time">
+            <br>
+            <label>현재 세탁: 190분 후 종료됩니다.</label>
+            <input type="submit" name="finish-button" value="세탁종료" style="background-color:rgba(148, 143, 143, 0.678)">            
+            <br>
+            <label>예상시간: 190분 후 사용가능 합니다.</label>
+            <input type="submit" name="reservation-button" value="예약하기" onclick="location.href='./reservation.html';" style="background-color:rgba(148, 143, 143, 0.678)">
+        </p>
+
+        <p>
+            <br>
+            <label style="font-weight: bold;">이전 사용자</label>
+            <br> 
+            <label>- 박XX | 0분 | 세탁기 옆 바구니에 빨래 넣어주세요.</label>
+            <input type="submit" name="report" value="⚠" style="background-color: white;">
+            <br>            
+            <label>- 김XX | 0분 | 빨래 아무곳이나 나둬주세요.</label>
+            <input type="submit" name="report" value="⚠" style="background-color: white;">
+            <br>
+            <label>- 서XX | 0분 | 빨래 아무곳이나 나둬주세요.</label>
+            <input type="submit" name="report" value="⚠" style="background-color: white;">
+            <br><br>
+            <label style="font-weight: bold;">진행중</label>
+            <br>
+            <label>- 권XX | 9분 | 세탁기 옆 바구니에 빨래 넣어주세요.</label>
+            <br><br>         
+            <label style="font-weight: bold;">예약자</label>
+            <br>
+            <label>1. 권XX | 30분 | 세탁기 옆 바구니에 빨래 넣어주세요.</label>
+            <br>
+            <label>2. 이XX | 75분 | 세탁기 옆 바구니에 빨래 넣어주세요.</label>
+            <br>
+        </p>
+    </div>
+
+    <div style="float: right;">
+        <div class="login">
+            
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+            
+            <form method="post" action="" id="login-form"> 
+                <input type="text" id="id" name="id" placeholder="id" style="background-color:rgba(221, 218, 213, 0.597)">
+                <input type="password" id="password" name="password" placeholder="password"  style="background-color:rgba(221, 218, 213, 0.597);">
+                <input type="submit" name="loginbutton" id="loginbutton" value="로그인" onclick="login();" style="background-color:rgba(148, 143, 143, 0.678)">
+                <br>
+                <a href="./signup.html" target="_blank" style="float: right;">회원가입 하기</a>
+                <br>
+            </form>
+        </div>
+        <div class="lastest">
+            <p>
+                <label>곧 가능한 세탁기</label>
+                <br>
+                <a href="">▷ 1층 방향2 a 세탁기 - 15분 남음</a>
+            </p>
+        </div>
+    </div>
+    
+</body>
